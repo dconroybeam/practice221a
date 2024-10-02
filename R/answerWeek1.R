@@ -1,4 +1,9 @@
-#A function for computing answers to Week 1's problems
+#' Week 1 Anwer Function
+#' 
+#' This function computes the answer to Week 1's practice script
+#' @param data The randomly generated question data
+#' @export
+
 answerWeek1 <- function(data) {
   #Compute mean
   m <- sum(data) / length(data)
