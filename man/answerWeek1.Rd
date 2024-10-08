@@ -2,7 +2,7 @@
 % Please edit documentation in R/answerWeek1.R
 \name{answerWeek1}
 \alias{answerWeek1}
-\title{Week 1 Anwer Function}
+\title{Week 1 Answer Function}
 \usage{
 answerWeek1(data)
 }
