@@ -1,10 +1,10 @@
-#' Week 1 Answer Function
+#' Week 2a Answer Function
 #' 
-#' This function computes the answer to Week 1's practice script
+#' This function computes the answer to the first question of Week 2's practice script
 #' @param data The randomly generated question data
 #' @export
 
-answerWeek1 <- function(data) {
+answerWeek2a <- function(data) {
   #Compute mean
   m <- sum(data) / length(data)
   
@@ -12,13 +12,13 @@ answerWeek1 <- function(data) {
   ss <- sum((data - m) ^ 2)
   
   #Compute variance and SD using population formulas
-  popVar <- ss / length(data)
-  popSd <- sqrt(popVar)
+  sampVar <- ss / (length(data) - 1)
+  sampSd <- sqrt(sampVar)
   
   return(c(
     paste0("mean = ", round(m, 3)),
     paste0("SS = ", round(ss, 3)),
-    paste0("variance = ", round(popVar, 3)),
-    paste0("SD = ", round(popSd, 3))
+    paste0("variance = ", round(sampVar, 3)),
+    paste0("SD = ", round(sampSd, 3))
   ))
 }
