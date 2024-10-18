@@ -3,3 +3,4 @@
 export(answerWeek1)
 export(answerWeek2a)
 export(answerWeek2b)
+export(answerWeek3)
